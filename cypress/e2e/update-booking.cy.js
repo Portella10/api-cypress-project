@@ -1,8 +1,10 @@
 /// <reference types="cypress" />
 
 describe("Update Booking", () => {
-  let token = " ";
-  let bookingId = " ";
+  let token = " "; // Variavel responsavel por armazenar o token
+  let bookingId = " "; // Variavel responsavel por armazenar o id da reserva
+
+  // Antes de cada teste, o Cypress irá executar o login
   beforeEach("Login", () => {
     cy.request({
       method: "POST",
@@ -16,6 +18,8 @@ describe("Update Booking", () => {
       token = response.body.token;
     });
   });
+
+  // Antes de cada test, o Cypress irá criar um Booking
   beforeEach("Create Booking", () => {
     cy.request({
       method: "POST",
@@ -45,6 +49,7 @@ describe("Update Booking", () => {
     });
   });
 
+  // Primeiro test se é possivel atualizar um booking
   it("Update Bokking", () => {
     cy.request({
       method: "PUT",
