@@ -1,3 +1,6 @@
+# Esse arquivo é responsável por agendar a execução do Cypress em um intervalo de tempo específico.
+# O cron é a ferramenta que vai agendar em que momento vai ser realizado o test no github.
+
 name: Cypress-api-schedule
 on:
   schedule:
