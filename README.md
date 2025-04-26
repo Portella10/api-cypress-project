@@ -1,20 +1,20 @@
-Teste de API com Cypress - Autenticação e Cadastro de Usuário
+🧪 Teste de API com Cypress - Autenticação e Cadastro de Usuário
 
-Descrição
+📄 Descrição
 
-Projeto simples de automação de testes de API utilizando Cypress.
-Fluxo principal:
+Projeto de automação de testes de API utilizando Cypress.
+Fluxo validado:
 
-Login de usuário para obter token.
-Cadastro de novo usuário.
-Atualização de usuário autenticado.
-Tecnologias
+Realizar login para obter o token de autenticação.
+Cadastrar novo usuário.
+Atualizar usuário autenticado utilizando o token.
+🚀 Tecnologias Utilizadas
 
-Cypress
-Node.js
-JavaScript
-Funcionalidades Testadas
+Cypress - Framework de automação de testes.
+Node.js - Ambiente de execução JavaScript.
+JavaScript - Linguagem de programação.
+🔥 Funcionalidades Testadas
 
-Login de usuário (POST /login)
-Cadastro de usuário (POST /users)
-Atualização de usuário (PUT /users/:id) com token
+POST /login - Autenticação de usuário.
+POST /users - Cadastro de novo usuário.
+PUT /users/:id - Atualização de dados do usuário com token.
